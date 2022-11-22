@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+:root{
+    --azul : #6F8BDD;
+    --azulFuerte : #223E90;
+    --blanco : #F3F3F3;
+    --negro : #282020;
+
+    --title : 'Montserrat', sans-serif;
+    --text :  'Hind Madurai', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+li{
+    list-style: none;
+}
+button{
+    border: none;
+    display: flex;
+}
+body{
+    background-color: var(--azul);
+}
+main{
+    padding: 24px 16px;
+    color: var(--negro);
+    font-size: 1.4rem;
+    font-family: var(--text);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 72px;
+}
+h1{
+    font-size: 24px;
+    line-height: 29px;
+    font-family: var(--title);
+    font-size: 2.4rem;
+}
+.nav-menu{
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    gap: 0;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--azulFuerte);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+.nav-item{
+    margin: 16px 0;
+}
+ .nav-menu.active{
+    left: 0;
+}
+.header__menu{
+    width: 24px;
+    height: 24px;
+}
+.home{
+    text-align: center;
+    margin-block-end: 72px;
+}
+.home__titulo{
+    width: 55%;
+    margin: 0 auto;
+    color: var(--blanco);
+    font-family: var(--title);
+    font-weight: 600;
+    font-size: 24px;
+    margin-block-end: 16px;
+}
+.home__descripcion{
+    width: 150px;
+    line-height: 19px;
+    margin: 0 auto 48px;
+}
+.home__button--video{
+    width: 100%;
+    max-width: 358px;
+    margin: 0 auto;
+    height: 38px;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+    background: var(--azulFuerte);
+    border-radius: 19px;
+    margin-block-end: 48px;
+}
+.carrousel{
+    display: flex;
+    justify-content:center;
+    gap:24px;
+    align-items: center;
+    margin-block-end: 32px;
+}
+.carrousel__arrows{
+    aspect-ratio: 1;
+    width: 10%;
+    max-width: 36px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.carrousel__arrows:hover{
+    cursor: pointer;
+}
+.carrousel__arrows--left{
+    background-image: url(./img/arrow-left.svg);
+}
+.carrousel__arrows--right{
+    background-image: url(./img/arrow-right.svg);
+}
+.carrousel__imagenes{
+    aspect-ratio: 1;
+    width: 60%;
+    min-width: 188px;
+    min-height: 201px;
+    background-image: url(./img/imagenPrueba.svg);
+    background-size: cover;
+    background-position: center;
+}
+.explore{
+    margin: 0 auto 72px;
+    max-width: 480px;
+}
+.explore__titulo{
+    margin:0 auto 40px;
+    font-family: var(--title);
+    text-align: center;
+    color: var(--azulFuerte);
+    width: 55%;
+    font-size: 24px;
+}
+.explore__card{
+    background-color: var(--azulFuerte);
+    color: var(--blanco);
+    margin-block: 16px;
+    padding: 16px;
+    border-radius: 16px;
+}
+.explore__card > h2{
+    font-family: var(--title);
+    margin-block-end: 8px;
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: var(--azul);
+}
+.roadmap{
+    text-align: center;
+    font-family: var(--title);
+    font-weight: 600;
+    margin: 0 auto 80px;
+    max-width: 480px;
+}
+.roadmap__item{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-block-end:72px;
+}
+.roadmap__item>h2{
+    font-size: 2.4rem;
+    color: var(--azulFuerte);
+}
+.roadmap__goal{
+    background-color: var(--azulFuerte);
+    border-radius: 8px;
+    color: var(--blanco);
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    height: 45px;
+    align-items: center;
+}
+.roadmap__icon{
+    width: 24px;
+    height: 24px;
+    background-image: url('./img/block.svg');
+}
+.roadmap__descripcion{
+    width: 55%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    font-family: var(--text);
+    font-weight: 400;
+}
+.team{
+    text-align: center;
+    margin-block-end: 80px;
+}
+.team>h2{
+    margin-block-end: 24px;
+    font-family: var(--title);
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: var(--azulFuerte);
+}
+.team>p{
+    margin-block-end: 40px;
+}
+.team__container{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.team__card{
+    aspect-ratio: 1;
+    width: 60%;
+    min-width: 168px;
+    max-width: 200px;
+    margin: 0 auto 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background-color: var(--blanco);
+}
+.team__img{
+    height: 136px;
+    width: 136px;
+    margin: 0 auto;
+}
+.footer{
+    text-align: center;
+}

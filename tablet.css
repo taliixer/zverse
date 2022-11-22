@@ -1,0 +1,28 @@
+main{
+    box-sizing:content-box;
+    padding: 24px 32px;
+    max-width: 840px;
+    margin: 0 auto;
+}
+h1 {
+    align-self: center;
+    width: 70%;
+}
+.header__menu{
+    display: none;
+}
+.nav-menu{
+    display: flex;
+    position:initial;
+    height: 100%;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+}
+.home__titulo{
+    
+}
